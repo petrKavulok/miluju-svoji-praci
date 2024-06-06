@@ -30,4 +30,11 @@ img {
   height: auto;
   cursor: pointer;
   aspect-ratio: 1/1;
+  transform: scale(1);
+  outline: none;
+  transition: transform 0.2s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
 }
