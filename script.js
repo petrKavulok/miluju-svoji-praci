@@ -4,7 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const imageContainer = document.getElementById("imageContainer");
 
   /** @var {Audio | undefined} */
-  let lastSound
+  let lastSound;
+
+  let echoMode = true;
+  const checkbox = document.getElementById("checkbox");
+  checkbox.addEventListener("click", function () {
+    echoMode = !echoMode;
+  });
 
   for (let i = 1; i <= 10; i++) {
     const img = document.createElement("img");
@@ -14,12 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
     img.dataset.sound = `assets/audio/audio (mp3cut.net) (${i}).mp3`; // Assuming sounds are named sound1.mp3, sound2.mp3, etc.
 
     img.addEventListener("click", function () {
-      lastSound?.pause();
+      if (!echoMode) {
+        lastSound?.pause();
+      }
       const sound = new Audio(this.dataset.sound);
       lastSound = sound;
       sound.play();
     });
-
     imageContainer.appendChild(img);
   }
 });
