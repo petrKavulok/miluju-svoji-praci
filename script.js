@@ -11,7 +11,7 @@ const titles = [
   'tak já se vole na to vyseru', 
   'píčo zase se nic nenačetlo', 
   'proč jsem nedržel hubu',
-  'jessica'
+  'píče vole'
 ]
 
 document.addEventListener("DOMContentLoaded", () => {
