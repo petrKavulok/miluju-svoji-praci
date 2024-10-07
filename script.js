@@ -10,7 +10,8 @@ const titles = [
   'teď to ještě hodilo error kua', 
   'tak já se vole na to vyseru', 
   'píčo zase se nic nenačetlo', 
-  'proč jsem nedržel hubu'
+  'proč jsem nedržel hubu',
+  'jessica'
 ]
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -25,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     echoMode = !echoMode;
   });
 
-  for (let i = 1; i <= 10; i++) {
+  for (let i = 1; i <= 11; i++) {
     const img = document.createElement("img");
     img.src = `assets/img/borecek${i}.png`; // Assuming images are named image1.jpg, image2.jpg, etc.
     img.alt = `Borecek ${i}`;
