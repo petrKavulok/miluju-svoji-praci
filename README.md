@@ -1,3 +1,3 @@
-# miluju-svoji-praci
+# BB miluje svoji praci
 
-www.ackee.cz
+www.ack.ee/bb
