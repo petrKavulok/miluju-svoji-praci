@@ -1,3 +1,3 @@
 # BB miluje svoji praci
 
-www.ack.ee/bb
+https://ack.ee/bb
